@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63709CB42672C267649F9AE5 /* Pods_TravisPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60309208040A95D61034EAEC /* Pods_TravisPOC.framework */; };
 		FAD53CA5254AD6A700BF3F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53CA4254AD6A700BF3F62 /* AppDelegate.swift */; };
 		FAD53CA7254AD6A700BF3F62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53CA6254AD6A700BF3F62 /* SceneDelegate.swift */; };
 		FAD53CA9254AD6A700BF3F62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD53CA8254AD6A700BF3F62 /* ViewController.swift */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60309208040A95D61034EAEC /* Pods_TravisPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		934D4D221FEA8C3FED6CD672 /* Pods-TravisPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisPOC.debug.xcconfig"; path = "Target Support Files/Pods-TravisPOC/Pods-TravisPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		98F8D908B7EA8CD5D703DCCD /* Pods-TravisPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisPOC.release.xcconfig"; path = "Target Support Files/Pods-TravisPOC/Pods-TravisPOC.release.xcconfig"; sourceTree = "<group>"; };
 		FAD53CA1254AD6A700BF3F62 /* TravisPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD53CA4254AD6A700BF3F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD53CA6254AD6A700BF3F62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63709CB42672C267649F9AE5 /* Pods_TravisPOC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		753BC89F49B285CA836122A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60309208040A95D61034EAEC /* Pods_TravisPOC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77D7F95A506A26C2D03DD0DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				934D4D221FEA8C3FED6CD672 /* Pods-TravisPOC.debug.xcconfig */,
+				98F8D908B7EA8CD5D703DCCD /* Pods-TravisPOC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FAD53C98254AD6A700BF3F62 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				FAD53CBA254AD6AA00BF3F62 /* TravisPOCTests */,
 				FAD53CC5254AD6AA00BF3F62 /* TravisPOCUITests */,
 				FAD53CA2254AD6A700BF3F62 /* Products */,
+				77D7F95A506A26C2D03DD0DC /* Pods */,
+				753BC89F49B285CA836122A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD53CCB254AD6AA00BF3F62 /* Build configuration list for PBXNativeTarget "TravisPOC" */;
 			buildPhases = (
+				614D0725A44C70025B284BAB /* [CP] Check Pods Manifest.lock */,
 				FAD53C9D254AD6A700BF3F62 /* Sources */,
 				FAD53C9E254AD6A700BF3F62 /* Frameworks */,
 				FAD53C9F254AD6A700BF3F62 /* Resources */,
+				C4246AF0092EAB3C2B2436B8 /* [CP] Embed Pods Frameworks */,
+				FA8D7CAD254BCABE00C52FE7 /* Update version and build number */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		614D0725A44C70025B284BAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravisPOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4246AF0092EAB3C2B2436B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravisPOC/Pods-TravisPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravisPOC/Pods-TravisPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravisPOC/Pods-TravisPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA8D7CAD254BCABE00C52FE7 /* Update version and build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update version and build number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# UPDATE VERSION INFORMATION FROM GIT\n\necho \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n\nif [ -n \"$BUNDLE_ID_SUFFIX\" ]; then\n    echo \"Detected $BUNDLE_ID_SUFFIX build\"\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString `git rev-parse --short HEAD`\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\n\nif [ -n \"$TRAVIS_BUILD_NUMBER\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${TRAVIS_BUILD_NUMBER}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nelse\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion `git rev-list --all|wc -l`\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAD53C9D254AD6A700BF3F62 /* Sources */ = {
@@ -433,17 +520,22 @@
 		};
 		FAD53CCC254AD6AA00BF3F62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934D4D221FEA8C3FED6CD672 /* Pods-TravisPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MK85Q3FUY;
 				INFOPLIST_FILE = TravisPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comtest.TravisPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TravisPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,17 +543,22 @@
 		};
 		FAD53CCD254AD6AA00BF3F62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F8D908B7EA8CD5D703DCCD /* Pods-TravisPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9MK85Q3FUY;
 				INFOPLIST_FILE = TravisPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = comtest.TravisPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TravisPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
